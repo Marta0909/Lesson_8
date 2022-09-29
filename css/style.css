@@ -1,0 +1,403 @@
+@font-face {
+	font-family: "Lato";
+	src: url("../fonts/latoregular.woff2") format("woff2"),
+	url("../fonts/latoregular.woff") format("woff");
+	font-display: swap;
+	font-weight: 400;
+	font-style: normal;
+}
+@font-face {
+	font-family: "Lato";
+	src: url("../fonts/latobold.woff2") format("woff2"),
+	url("../fonts/latobold.woff") format("woff");
+	font-display: swap;
+	font-weight: 700;
+	font-style: normal;
+}
+@font-face {
+	font-family: "Lato";
+	src: url("../fonts/latoblack.woff2") format("woff2"),
+	url("../fonts/latoblack.woff") format("woff");
+	font-display: swap;
+	font-weight: 900;
+	font-style: normal;
+}
+
+body {
+	font-family: "Lato", sans-serif;
+	color: #424551;
+}
+
+[class*="__container"] {
+	max-width: 600px;
+	margin: 0 auto;
+}
+
+.header__container,
+.footer__container {
+	margin-bottom: 40px;
+	text-align: center;
+	font-weight: 700;
+	font-size: 24px;
+}
+
+.header__container {
+	margin-top: 40px;
+}
+
+h1 {
+	font-weight: 900;
+	font-size: 46px;
+	line-height: 130%;
+	color: #1E212C;
+}
+
+.title-1 {
+	margin-bottom: 40px;
+}
+
+.text.block-1,
+.text.block-4 {
+	line-height: 160%;
+	margin-bottom: 48px;
+}
+
+.title-2 {
+	font-weight: 700;
+	font-size: 28px;
+	line-height: 150%;
+	color: #1E212C;
+	margin-bottom: 24px;
+}
+
+.text.block-2 {
+	margin-bottom: 200px;
+	line-height: 160%;
+}
+
+.text.block-2 li{
+	margin-bottom: 4px;
+	padding-left: 32px;
+	min-height: 20px;
+	background: url('../img/Vector.png') 0 5px no-repeat;
+}
+
+.title-3 {
+	font-weight: 700;
+	line-height: 150%;
+	text-transform: uppercase;
+	margin-bottom: 8px;
+	color: #1E212C;
+}
+
+.title-4 {
+	margin-bottom: 16px;
+}
+
+.title-5 {
+	font-weight: 400;
+	font-size: 20px;
+	line-height: 150%;
+	color: #787A80;
+	margin-bottom: 32px;
+}
+
+.text.block-3 {
+	margin-bottom: 32px;
+	line-height: 160%;
+}
+
+.text.block-3 li {
+	margin-bottom: 4px;
+	padding-left: 24px;
+	min-height: 20px;
+}
+
+.star {
+	background: url('../img/Star.png') 0 5px no-repeat;
+}
+
+.play {
+	background: url('../img/Play.png') 0 5px no-repeat;
+}
+
+.profile {
+	background: url('../img/Profile.png') 0 5px no-repeat;
+}
+
+/* псевдокласи */
+
+.link {
+	color: aquamarine;
+	display: inline-block;
+}
+
+.link:hover {
+	color: crimson;
+	text-decoration: underline;
+}
+
+.link:active {
+	color: rgb(21, 13, 179);
+}
+
+[class*="__website"]:visited {
+	color: rgb(100, 0, 0);
+}
+
+.block-5,
+.block-6,
+.block-7 {
+	background-color: rgb(165, 195, 18);
+	margin-bottom: 20px;
+	font-size: 20px;
+}
+
+.block-5:hover {
+	background-color: rgb(51, 128, 172);
+}
+
+.block-6__item {
+	opacity: 0;
+	visibility: hidden;
+}
+
+.block-6:hover .block-6__item {
+	visibility: visible;
+	opacity: 1;
+}
+
+.websites,
+.lesson,
+.link,
+.link-3 {
+	margin-bottom: 20px;
+	font-size: 20px;
+}
+
+.lesson-underlist {
+	margin-left: 10px;
+}
+
+.lesson .lesson-underlist {
+	display: none;
+}
+
+.lesson .lesson-list:hover .lesson-underlist {
+	display: block;
+}
+
+.lesson p:hover + .lesson-underlist {
+	color: blue;
+}
+
+.link__website:focus {
+	outline: 2px solid red;
+}
+
+.block-7 {
+	display: none;
+}
+
+.block-7:target {
+	display: block;
+}
+
+.block-7__item {
+	margin-bottom: 20px;
+}
+
+.txt {
+	background-color: rgb(218, 122, 233);
+	line-height: 130%;
+	padding: 20px;
+	margin-bottom: 20px;
+}
+
+.bb:not(:last-child ) {
+	margin-bottom: 20px;
+}
+
+/* це інший варіант того самого 
+.bb > *:last-child {
+	margin-bottom: 20px;
+}
+*/
+
+.txt div:first-child {
+	background-color: aquamarine;
+}
+
+.txt p:first-of-type {
+	background-color: dodgerblue;
+}
+
+.txt div:last-child {
+	background-color: rgb(255, 251, 30);
+}
+
+.txt p:last-of-type {
+	background-color: rgb(38, 30, 255);
+}
+
+.txt p:nth-child(3) {
+	background-color: rgb(56, 255, 30);
+}
+
+.txt p:nth-child(odd) {
+	color: rgb(102, 0, 255);
+}
+
+.txt p:nth-child(even) {
+	color: rgb(186, 166, 40);
+}
+
+.txt div:not(:last-child) {
+	text-transform: uppercase;
+}
+
+.block-7 {
+	background-color: rgb(165, 195, 18);
+	margin-bottom: 20px;
+	font-size: 24px;
+}
+
+/* псевдоелементи */
+
+.sp {
+	display: inline-block;
+	margin-bottom: 20px;
+	font-size: 20px;
+}
+
+span::before {
+	content: "!";
+	color: brown;
+}
+
+span::after {
+	content: "::before і ::after";
+	color: brown;
+}
+
+.pseudo {
+	font-size: 20px;
+	line-height: 130%;
+	margin-bottom: 40px;
+	background-color: aqua;
+	padding: 10px;
+}
+
+.pseudo__item:not(:last-child) {
+	margin-bottom: 10px;
+}
+
+.pseudo .pseudo__item::before {
+	background: url(../img/Vector.png) 0 4px no-repeat;
+	content: "";
+	width: 16px;
+	min-height: 20px;
+	display: inline-block;
+}
+
+/* гра */
+
+.name {
+	text-align: center;
+	margin-bottom: 40px;
+}
+
+.field {
+	max-width: 700px;
+	min-height: 700px;
+	margin: 0 auto;
+	background-color: cornflowerblue;
+	margin-bottom: 40px;
+}
+
+.start {
+	width: 50px;
+	height: 50px;
+	background-color: rgb(2, 45, 126);
+	color: gold;
+	text-transform: uppercase;
+	text-align: center;
+	padding-top: 17px;
+}
+
+.line-1 {
+	background-color: rgb(2, 11, 27);
+	width: 400px;
+	height: 40px;
+}
+
+.line-2 {
+	background-color: rgb(227, 16, 125);
+	width: 40px;
+	height: 200px;
+	margin-left: 360px;
+}
+
+.line-3 {
+	background-color: rgb(202, 227, 16);
+	width: 340px;
+	height: 30px;
+	margin-left: 360px;
+}
+
+.line-4 {
+	background-color: rgb(0, 0, 0);
+	width: 30px;
+	height: 100px;
+	margin-left: 670px;
+}
+
+.line-5 {
+	background-color: rgb(227, 16, 125);
+	width: 500px;
+	height: 20px;
+	margin-left: 200px;
+}
+
+.line-6 {
+	background-color: rgb(202, 227, 16);
+	width: 20px;
+	height: 210px;
+	margin-left: 200px;
+}
+
+.finish {
+	width: 50px;
+	height: 50px;
+	background-color: rgb(2, 45, 126);
+	color: gold;
+	text-transform: uppercase;
+	text-align: center;
+	padding-top: 17px;
+	margin-left: 185px;
+}
+
+.line-1,
+.line-2,
+.line-3,
+.line-4,
+.line-5,
+.line-6 {
+	visibility: hidden;
+}
+
+.start:hover + .line-1,
+.line-1:hover,
+.line-1:hover + .line-2,
+.line-2:hover,
+.line-2:hover + .line-3,
+.line-3:hover,
+.line-3:hover + .line-4,
+.line-4:hover,
+.line-4:hover + .line-5,
+.line-5:hover,
+.line-5:hover + .line-6,
+.line-6:hover {
+   visibility: visible;
+}
+
